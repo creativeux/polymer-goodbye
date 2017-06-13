@@ -1,5 +1,6 @@
 {
   "name": "as-goodbye-world",
+  "version": "0.0.2",
   "main": "as-goodbye-world.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^2.0.0"

@@ -1,0 +1,36 @@
+<link rel="import" href="bower_components/polymer/polymer-element.html">
+
+<dom-module id="as-goodbye-world">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Goodbye [[who]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `as-hello-world`
+     * 
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class AsGoodbyeWorld extends Polymer.Element {
+      static get is() { return 'as-goodbye-world'; }
+      static get properties() {
+        return {
+          who: {
+            type: String,
+            value: 'world'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(AsGoodbyeWorld.is, AsGoodbyeWorld);
+  </script>
+</dom-module>
